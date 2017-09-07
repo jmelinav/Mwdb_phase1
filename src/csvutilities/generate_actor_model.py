@@ -1,32 +1,46 @@
 import pandas as pd
 import numpy as np
 
+DATASET_ROOT_PATH = '/Users/faraday/Documents/Projects/mwdb/Mwdb_phase1/resources/phase1_dataset/'
+
+
 def readcsv(name):
     return pd.read_csv(name)
 
 def generate_actor_model(actorid):
     print("Generating actor model")
-    df_tags = readcsv('/Users/mj/Documents/Courses/fall-2017/cse-515-mwdb/phase-1/Mwdb_phase1/resources/phase1_dataset/mltags.csv')
-    df_actor = readcsv('/Users/mj/Documents/Courses/fall-2017/cse-515-mwdb/phase-1/Mwdb_phase1/resources/phase1_dataset/movie-actor.csv')
+    df_tags = readcsv(DATASET_ROOT_PATH + 'mltags.csv')
+    df_actor = readcsv(DATASET_ROOT_PATH + 'movie-actor.csv')
 
-    merged = pd.merge(df_actor,df_tags, on='movieid')
-    print(merged.iloc[:5,[1,4]])
-    #data = merged.pivot_table(index=['tagid','actorid'] , values = ['tagid'], aggfunc=lambda tagid: len(tagid.unique()))
+    df_tags['timestamp'] = pd.to_datetime(df_tags['timestamp'], format='%Y/%m/%d %H:%M:%S')
+
+    #min_tag = (df_tags['timestamp'].groupby(df_tags['movieid']).min()).to_frame()
+    #print(min_tag.columns)
+    min_tag = df_tags['timestamp'].groupby(df_tags['movieid']).min()
+    min_tag = min_tag.to_frame()
+    min_tag = min_tag.reset_index(level=['movieid'])
+    max_tag = df_tags['timestamp'].groupby(df_tags['movieid']).max()
+    max_tag = max_tag.to_frame()
+    max_tag = max_tag.reset_index(level=['movieid'])
+    min_tag.columns = ['movieid', 'timestamp_min']
+    max_tag.columns = ['movieid', 'timestamp_max']
+    min_max_tag = pd.merge(min_tag,max_tag,on='movieid')
+    df_tags_with_min_max = pd.merge(df_tags,min_max_tag,on='movieid')
+    df_tags_with_min_max['between 1-2'] = df_tags_with_min_max.apply(
+        lambda row: ((row['timestamp'].timestamp() - row['timestamp_min'].timestamp())
+                     / (row['timestamp_max'].timestamp() - row['timestamp_min'].timestamp())
+                     if row['timestamp_max'].timestamp() != row['timestamp_min'].timestamp() else 1)
+                    * (2 - 1) + 1, axis=1)
+
+    merged = pd.merge(df_actor,df_tags_with_min_max, on='movieid')
     merged['COUNTER'] = 1
     group_data = pd.DataFrame(merged.groupby(['actorid', 'tagid'])['COUNTER'].sum())
     term_vector = group_data.pivot_table('COUNTER', ['actorid'], 'tagid')
-    merged['timestamp'] =  pd.to_datetime(merged['timestamp'], format='%Y/%m/%d %H:%M:%S')
-    print('min date : ',min(merged['timestamp']),"max date : " ,max(merged['timestamp']))
-    min_ts = min(merged['timestamp']).timestamp()
-    max_ts = max(merged['timestamp']).timestamp()
-    #merged['between 0-1'] = ((merged['timestamp'].timestamp() - min_ts) / (max_ts - min_ts)) * (1 - 0) + 0;
-    merged['between 0-1'] = merged.apply(lambda row: ((row['timestamp'].timestamp() - min_ts) / (max_ts - min_ts)) * (1 - 0) + 0, axis=1)
     merged.to_csv(
-        '/Users/mj/Documents/Courses/fall-2017/cse-515-mwdb/phase-1/Mwdb_phase1/resources/phase1_dataset/actor_tag.csv',
+        DATASET_ROOT_PATH + 'actor_tag.csv',
         index=False)
-    print('ts min : ', min_ts, 'ts max : ', max_ts)
     term_vector.to_csv(
-        '/Users/mj/Documents/Courses/fall-2017/cse-515-mwdb/phase-1/Mwdb_phase1/resources/phase1_dataset/actor_tag_agg.csv')
+        DATASET_ROOT_PATH + 'actor_tag_agg.csv')
     print(group_data.ix[:5])
 
 generate_actor_model(5)
