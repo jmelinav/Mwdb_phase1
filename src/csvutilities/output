@@ -1,0 +1,1270 @@
+Script started on Sun Sep 17 17:29:42 2017
+[?1034h(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py build
+cleaning files
+building models
+Generating actor model
+Generating User model
+Generating genre model
+all models are generated
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py actor tf 88481[K[K[K[K[K334
+               term_vector
+goofy                  0.2
+farce                  0.2
+stupid                 0.1
+spoof                  0.1
+pg-13                  0.1
+not funny              0.1
+quirky                 0.1
+funny as hell          0.1
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py actor tfidf 334
+               term_vector
+goofy             1.032738
+farce             1.032738
+stupid            0.413841
+spoof             0.412045
+funny as hell     0.370672
+not funny         0.336522
+quirky            0.315894
+pg-13             0.310724
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py user tf 2456
+              term_vector
+zombies             0.125
+high school         0.125
+australia           0.125
+spelling bee        0.125
+surreal             0.125
+genocide            0.125
+animation           0.125
+tarantino           0.125
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py user tfidf 2456
+              term_vector
+australia        0.745928
+spelling bee     0.608602
+genocide         0.511953
+high school      0.502690
+animation        0.485998
+tarantino        0.485998
+zombies          0.430212
+surreal          0.416046
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py genre tf Action
+                                    term_vector
+comic book                            0.0518293
+action                                0.0426829
+tarantino                             0.0335366
+super-hero                            0.0335366
+vampires                              0.0320122
+philip k. dick                        0.0289634
+superhero                             0.0213415
+sci-fi                                0.0198171
+zombies                               0.0167683
+war                                   0.0167683
+vampire                               0.0167683
+video game adaptation                 0.0152439
+adventure                             0.0152439
+time travel                           0.0137195
+future                                0.0137195
+dystopia                              0.0137195
+pirates                               0.0137195
+history                               0.0137195
+remake                                0.0121951
+martial arts                          0.0106707
+violent                               0.0106707
+nudity (topless)                      0.0106707
+sequel                                0.0106707
+dynamic cgi action                    0.0106707
+bond                                  0.0106707
+parody                               0.00914634
+overrated                            0.00914634
+based on a tv show                   0.00914634
+revenge                              0.00914634
+franchise                            0.00914634
+boring                               0.00914634
+drugs                                0.00762195
+violence                             0.00762195
+murder                               0.00762195
+robots                               0.00762195
+gothic                               0.00762195
+james bond                           0.00762195
+vietnam war                          0.00609756
+big budget                           0.00609756
+motorcycle                           0.00609756
+werewolves                           0.00609756
+based on a book                      0.00609756
+comedy                               0.00609756
+space                                0.00609756
+heist                                0.00609756
+espionage                            0.00457317
+directorial debut                    0.00457317
+dark                                 0.00457317
+adapted from:game                    0.00457317
+marvel                               0.00457317
+heroine in tight suit                0.00457317
+reality tv                           0.00457317
+futuristic                           0.00457317
+amazing cinematography               0.00457317
+sci fi                               0.00457317
+imdb top 250                         0.00457317
+artificial intelligence              0.00457317
+star trek                            0.00457317
+cars                                 0.00457317
+dinosaurs                            0.00457317
+bad acting                           0.00457317
+crappy sequel                        0.00457317
+puppets                              0.00457317
+lesbian                              0.00457317
+japan                                0.00457317
+funny                                0.00457317
+very good                            0.00457317
+blood                                0.00457317
+bloody                               0.00304878
+submarine                            0.00304878
+atmospheric                          0.00304878
+dc comics                            0.00304878
+true story                           0.00304878
+not funny                            0.00304878
+adapted from:comic                   0.00304878
+dragons                              0.00304878
+alter ego                            0.00304878
+war movie                            0.00304878
+nudity (topless - notable)           0.00304878
+historical                           0.00304878
+stylized                             0.00304878
+oscar (best cinematography)          0.00304878
+world war ii                         0.00304878
+spying                               0.00304878
+thriller                             0.00304878
+drama                                0.00304878
+nudity (rear)                        0.00304878
+interesting                          0.00304878
+zombie                               0.00304878
+new york                             0.00304878
+underrated                           0.00304878
+new york city                        0.00304878
+nudity (topless - brief)             0.00304878
+politics                             0.00304878
+swashbuckler                         0.00304878
+police                               0.00304878
+plot holes                           0.00304878
+star wars                            0.00304878
+alien                                0.00304878
+japanese                             0.00304878
+cool                                 0.00304878
+super hero                           0.00304878
+fun                                  0.00304878
+cia                                  0.00152439
+cult film                            0.00152439
+irreverent                           0.00152439
+god                                  0.00152439
+torture                              0.00152439
+steampunk                            0.00152439
+post apocalyptic                     0.00152439
+fascism                              0.00152439
+bullshit history                     0.00152439
+corny                                0.00152439
+ghosts                               0.00152439
+buddy movie                          0.00152439
+ridiculous                           0.00152439
+kidnapping                           0.00152439
+virus                                0.00152439
+hackers                              0.00152439
+ensemble cast                        0.00152439
+mutants                              0.00152439
+chris tucker                         0.00152439
+antarctica                           0.00152439
+crime                                0.00152439
+spaghetti western                    0.00152439
+great soundtrack                     0.00152439
+video game                           0.00152439
+los angeles                          0.00152439
+aviation                             0.00152439
+based on a video game                0.00152439
+detective                            0.00152439
+western                              0.00152439
+sexy                                 0.00152439
+bad sequel                           0.00152439
+sappy                                0.00152439
+exciting                             0.00152439
+comic book adaption                  0.00152439
+hacking                              0.00152439
+graphic novel                        0.00152439
+science fiction                      0.00152439
+masterpiece                          0.00152439
+gay                                  0.00152439
+literary adaptation                  0.00152439
+satire                               0.00152439
+not as good as the first             0.00152439
+computer game                        0.00152439
+saturn award (best special effects)  0.00152439
+thought-provoking                    0.00152439
+book was better                      0.00152439
+peter pan                            0.00152439
+adapted from:book                    0.00152439
+queer                                0.00152439
+biographical                         0.00152439
+slasher                              0.00152439
+culture clash                        0.00152439
+kick-butt women                      0.00152439
+epic                                 0.00152439
+twist ending                         0.00152439
+horses                               0.00152439
+paranoid                             0.00152439
+factual                              0.00152439
+sexualized violence                  0.00152439
+predictable                          0.00152439
+campy                                0.00152439
+cross dressing                       0.00152439
+africa                               0.00152439
+wuxia                                0.00152439
+court                                0.00152439
+classic                              0.00152439
+too long                             0.00152439
+pg                                   0.00152439
+notable nudity                       0.00152439
+video games                          0.00152439
+visually appealing                   0.00152439
+alternate universe                   0.00152439
+hilarious                            0.00152439
+surreal                              0.00152439
+magic                                0.00152439
+over the top                         0.00152439
+quirky                               0.00152439
+middle east                          0.00152439
+series                               0.00152439
+monsters                             0.00152439
+medieval                             0.00152439
+treasure                             0.00152439
+great cinematography                 0.00152439
+robbery                              0.00152439
+waste of time                        0.00152439
+france                               0.00152439
+chick flick                          0.00152439
+nuclear                              0.00152439
+british                              0.00152439
+good                                 0.00152439
+england                              0.00152439
+television                           0.00152439
+wwii                                 0.00152439
+girlie movie                         0.00152439
+terrorism                            0.00152439
+special effects                      0.00152439
+spoof                                0.00152439
+transformation                       0.00152439
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py genre tfidf Action
+                                     term_vector
+tarantino                              0.0504416
+vampires                               0.0410055
+philip k. dick                         0.0371002
+super-hero                             0.0368437
+comic book                             0.0304646
+vampire                                0.0252208
+action                                 0.0250885
+superhero                               0.023446
+bond                                   0.0191194
+adventure                              0.0167471
+history                                0.0150724
+martial arts                           0.0136685
+dynamic cgi action                     0.0136685
+dystopia                               0.0129576
+pirates                                0.0129576
+revenge                                0.0117159
+zombies                                0.0116229
+robots                                  0.011464
+james bond                              0.011464
+vietnam war                            0.0109254
+video game adaptation                  0.0105663
+violent                                0.0100781
+cars                                   0.0100483
+war                                   0.00985618
+sci-fi                                0.00975944
+future                                0.00950964
+werewolves                             0.0091712
+crappy sequel                         0.00819402
+blood                                 0.00819402
+space                                 0.00781057
+heist                                 0.00781057
+franchise                             0.00741704
+violence                              0.00719864
+remake                                0.00716813
+reality tv                             0.0068784
+futuristic                             0.0068784
+sci fi                                 0.0068784
+artificial intelligence                0.0068784
+star trek                              0.0068784
+dinosaurs                              0.0068784
+time travel                           0.00675654
+motorcycle                            0.00669886
+parody                                0.00633976
+sequel                                0.00627211
+murder                                0.00618087
+gothic                                0.00618087
+puppets                               0.00585793
+big budget                            0.00575891
+bloody                                0.00546268
+dc comics                             0.00546268
+war movie                             0.00546268
+based on a tv show                     0.0053761
+boring                                 0.0053761
+heroine in tight suit                 0.00502414
+lesbian                               0.00502414
+japan                                 0.00502414
+adapted from:comic                     0.0045856
+dragons                                0.0045856
+alter ego                              0.0045856
+stylized                               0.0045856
+world war ii                           0.0045856
+spying                                 0.0045856
+star wars                              0.0045856
+japanese                               0.0045856
+cool                                   0.0045856
+super hero                             0.0045856
+drugs                                 0.00448008
+nudity (topless)                      0.00432661
+adapted from:game                     0.00431918
+marvel                                0.00431918
+amazing cinematography                0.00431918
+bad acting                            0.00431918
+historical                            0.00390529
+oscar (best cinematography)           0.00390529
+police                                0.00390529
+espionage                             0.00370852
+dark                                  0.00370852
+submarine                             0.00334943
+chris tucker                          0.00334943
+video game                            0.00334943
+based on a video game                 0.00334943
+exciting                              0.00334943
+kick-butt women                       0.00334943
+wuxia                                 0.00334943
+court                                 0.00334943
+politics                              0.00334943
+swashbuckler                          0.00334943
+france                                0.00334943
+directorial debut                     0.00316988
+comedy                                0.00300291
+overrated                             0.00297642
+zombie                                0.00287946
+underrated                            0.00287946
+plot holes                            0.00287946
+alien                                 0.00287946
+fun                                   0.00287946
+cult film                             0.00273134
+buddy movie                           0.00273134
+hackers                               0.00273134
+mutants                               0.00273134
+spaghetti western                     0.00273134
+aviation                              0.00273134
+western                               0.00273134
+comic book adaption                   0.00273134
+hacking                               0.00273134
+science fiction                       0.00273134
+masterpiece                           0.00273134
+saturn award (best special effects)   0.00273134
+queer                                 0.00273134
+slasher                               0.00273134
+factual                               0.00273134
+sexualized violence                   0.00273134
+video games                           0.00273134
+alternate universe                    0.00273134
+over the top                          0.00273134
+series                                0.00273134
+nuclear                               0.00273134
+television                            0.00273134
+wwii                                  0.00273134
+terrorism                             0.00273134
+transformation                        0.00273134
+not funny                             0.00247235
+new york                              0.00247235
+new york city                         0.00247235
+cia                                    0.0022928
+steampunk                              0.0022928
+post apocalyptic                       0.0022928
+bullshit history                       0.0022928
+ghosts                                 0.0022928
+virus                                  0.0022928
+los angeles                            0.0022928
+sexy                                   0.0022928
+bad sequel                             0.0022928
+sappy                                  0.0022928
+graphic novel                          0.0022928
+not as good as the first               0.0022928
+biographical                           0.0022928
+culture clash                          0.0022928
+epic                                   0.0022928
+horses                                 0.0022928
+cross dressing                         0.0022928
+africa                                 0.0022928
+too long                               0.0022928
+middle east                            0.0022928
+monsters                               0.0022928
+medieval                               0.0022928
+robbery                                0.0022928
+girlie movie                           0.0022928
+special effects                        0.0022928
+spoof                                  0.0022928
+nudity (topless - notable)            0.00211325
+irreverent                            0.00195264
+god                                   0.00195264
+torture                               0.00195264
+fascism                               0.00195264
+corny                                 0.00195264
+kidnapping                            0.00195264
+ensemble cast                         0.00195264
+detective                             0.00195264
+computer game                         0.00195264
+paranoid                              0.00195264
+campy                                 0.00195264
+visually appealing                    0.00195264
+treasure                              0.00195264
+great cinematography                  0.00195264
+funny                                 0.00185426
+atmospheric                           0.00179203
+true story                            0.00179203
+thriller                              0.00179203
+drama                                 0.00179203
+nudity (topless - brief)              0.00179203
+ridiculous                            0.00167471
+antarctica                            0.00167471
+crime                                 0.00167471
+great soundtrack                      0.00167471
+gay                                   0.00167471
+book was better                       0.00167471
+peter pan                             0.00167471
+england                               0.00167471
+based on a book                       0.00153241
+imdb top 250                          0.00148821
+very good                             0.00148821
+literary adaptation                   0.00143973
+adapted from:book                     0.00143973
+classic                               0.00143973
+magic                                 0.00143973
+chick flick                           0.00143973
+british                               0.00143973
+predictable                           0.00123617
+nudity (rear)                         0.00123617
+interesting                           0.00123617
+satire                                0.00105663
+thought-provoking                     0.00105663
+pg                                    0.00105663
+notable nudity                        0.00105663
+hilarious                             0.00105663
+good                                  0.00105663
+twist ending                         0.000896016
+surreal                              0.000750726
+waste of time                        0.000750726
+quirky                               0.000618087
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py diff Comedy Action tf-idf
+Generating td-idf diff model
+                                                      tf_idf
+tag                                                         
+pixar                                               0.025077
+romance                                             0.024434
+animation                                           0.010931
+high school                                         0.009002
+fairy tale                                          0.007073
+good romantic comedies                              0.006430
+soccer                                              0.006430
+teen                                                0.006430
+disney                                              0.005787
+funniest movies                                     0.005787
+family                                              0.005144
+pg-13                                               0.005144
+memory                                              0.005144
+black comedy                                        0.004501
+religion                                            0.004501
+funny as hell                                       0.004501
+spelling bee                                        0.003858
+bollywood                                           0.003858
+existentialism                                      0.003858
+wedding                                             0.003858
+sexuality                                           0.003858
+wine                                                0.003858
+guilty pleasure                                     0.003215
+stupid                                              0.003215
+relationships                                       0.003215
+cute                                                0.003215
+bdsm                                                0.003215
+very funny                                          0.003215
+psychology                                          0.003215
+college                                             0.002572
+road trip                                           0.002572
+cartoon                                             0.002572
+dreamworks                                          0.002572
+bittersweet                                         0.002572
+sports                                              0.002572
+suprisingly clever                                  0.002572
+rock and roll                                       0.002572
+british comedy                                      0.002572
+jay and silent bob                                  0.002572
+las vegas                                           0.002572
+whimsical                                           0.002572
+touching                                            0.002572
+brilliant                                           0.002572
+india                                               0.002572
+adolescence                                         0.002572
+animated                                            0.002572
+talking animals                                     0.001929
+sex                                                 0.001929
+london                                              0.001929
+artistic                                            0.001929
+music                                               0.001929
+christmas                                           0.001929
+romantic                                            0.001929
+coen bros                                           0.001929
+dumb but funny                                      0.001929
+ocean                                               0.001929
+melancholic                                         0.001929
+teen movie                                          0.001286
+australian                                          0.001286
+caper                                               0.001286
+cheerleading                                        0.001286
+stoner movie                                        0.001286
+romantic comedy                                     0.001286
+stupid as hell                                      0.001286
+dumb                                                0.001286
+sweet                                               0.001286
+amnesia                                             0.001286
+slow                                                0.001286
+mental illness                                      0.001286
+goofy                                               0.001286
+football                                            0.001286
+philosophy                                          0.001286
+love                                                0.001286
+mockumentary                                        0.001286
+weird                                               0.001286
+literature                                          0.001286
+computer animation                                  0.001286
+redemption                                          0.001286
+realistic                                           0.001286
+movie business                                      0.001286
+fun movie                                           0.001286
+scenic                                              0.001286
+nudity (full frontal - notable)                     0.001286
+witty                                               0.001286
+president                                           0.001286
+berlin                                              0.001286
+switching places                                    0.001286
+pretentious                                         0.001286
+memory loss                                         0.001286
+farce                                               0.001286
+narrated                                            0.001286
+oscar (best animated feature)                       0.001286
+very interesting                                    0.001286
+horror                                              0.001286
+oscar winner                                        0.001286
+school                                              0.001286
+tokyo                                               0.001286
+great                                               0.001286
+fairy tales                                         0.001286
+easily confused with other movie(s) (title)         0.000643
+coming of age                                       0.000643
+surrealism                                          0.000643
+musicians                                           0.000643
+period piece                                        0.000643
+alien invasion                                      0.000643
+working class                                       0.000643
+inspirational                                       0.000643
+unique                                              0.000643
+friendship                                          0.000643
+immigrants                                          0.000643
+san francisco                                       0.000643
+feel good movie                                     0.000643
+silly                                               0.000643
+italy                                               0.000643
+black and white                                     0.000643
+nerds                                               0.000643
+geek                                                0.000643
+ireland                                             0.000643
+island                                              0.000643
+obsession                                           0.000643
+suburbia                                            0.000643
+nudity                                              0.000643
+prison                                              0.000643
+supernatural                                        0.000643
+cute!                                               0.000643
+mother-son relationship                             0.000643
+excellent                                           0.000643
+satirical                                           0.000643
+heartwarming                                        0.000643
+unlikely friendships                                0.000643
+love story                                          0.000643
+bad                                                 0.000643
+humorous                                            0.000643
+teens                                               0.000643
+indians                                             0.000643
+great movie                                         0.000643
+sad                                                 0.000643
+1970s                                               0.000643
+shallow                                             0.000643
+sentimental                                         0.000643
+humor                                               0.000643
+pixar animation                                     0.000643
+disney animated feature                             0.000643
+dark comedy                                         0.000643
+competition                                         0.000643
+father daughter relationship                        0.000643
+based on book                                       0.000643
+based on a true story                               0.000643
+courtroom                                           0.000643
+adultery                                            0.000643
+wistful                                             0.000643
+love triangles                                      0.000643
+casino                                              0.000643
+weed                                                0.000643
+mystery                                             0.000643
+cynical                                             0.000643
+compassionate                                       0.000643
+affectionate                                        0.000643
+musical                                             0.000643
+monster                                             0.000643
+basketball                                          0.000643
+off-beat comedy                                     0.000643
+deadpan                                             0.000643
+lyrical                                             0.000643
+indie                                               0.000643
+oscar (best writing - screenplay written direct...  0.000643
+oscar (best music - original score)                 0.000643
+irish                                               0.000643
+german                                              0.000643
+awful                                               0.000643
+pregnancy                                           0.000643
+capitalism                                          0.000643
+colourful                                           0.000643
+gambling                                            0.000643
+pointless                                           0.000643
+nudity (full frontal - brief)                       0.000643
+nudity (full frontal)                               0.000643
+fantasy                                             0.000643
+teenagers                                           0.000643
+erotic                                              0.000643
+boxing                                              0.000643
+life                                                0.000643
+sophia coppola                                      0.000643
+watch the credits                                   0.000643
+passionate                                          0.000643
+books                                               0.000643
+feel-good                                           0.000643
+cgi                                                 0.000643
+canada                                              0.000643
+horrible                                            0.000643
+documentary                                         0.000643
+jane austen                                         0.000643
+strange                                             0.000643
+idiotic                                             0.000643
+no plot                                             0.000643
+animal movie                                        0.000643
+depressing                                          0.000643
+australia                                           0.000643
+fish                                                0.000643
+women                                               0.000643
+lawyers                                             0.000643
+money                                               0.000643
+spielberg                                           0.000643
+kids                                                0.000643
+special                                             0.000643
+workplace                                           0.000643
+mummy                                               0.000643
+suicide attempt                                     0.000643
+disappointing                                       0.000643
+cancer                                              0.000643
+view askew                                          0.000643
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py diff Comedy Action p1
+Generating P1 diff model
+                                                         diff
+pixar                                               54.866710
+romance                                             53.459872
+animation                                           23.916258
+high school                                         19.695742
+fairy tale                                          15.475226
+good romantic comedies                              14.068387
+soccer                                              14.068387
+teen                                                14.068387
+disney                                              12.661549
+funniest movies                                     12.661549
+family                                              11.254710
+pg-13                                               11.254710
+memory                                              11.254710
+black comedy                                         9.847871
+religion                                             9.847871
+funny as hell                                        9.847871
+spelling bee                                         8.441032
+bollywood                                            8.441032
+existentialism                                       8.441032
+wedding                                              8.441032
+sexuality                                            8.441032
+wine                                                 8.441032
+guilty pleasure                                      7.034194
+stupid                                               7.034194
+relationships                                        7.034194
+cute                                                 7.034194
+bdsm                                                 7.034194
+very funny                                           7.034194
+psychology                                           7.034194
+college                                              5.627355
+road trip                                            5.627355
+cartoon                                              5.627355
+dreamworks                                           5.627355
+bittersweet                                          5.627355
+sports                                               5.627355
+suprisingly clever                                   5.627355
+rock and roll                                        5.627355
+british comedy                                       5.627355
+jay and silent bob                                   5.627355
+las vegas                                            5.627355
+whimsical                                            5.627355
+touching                                             5.627355
+brilliant                                            5.627355
+india                                                5.627355
+adolescence                                          5.627355
+animated                                             5.627355
+talking animals                                      4.220516
+sex                                                  4.220516
+london                                               4.220516
+artistic                                             4.220516
+music                                                4.220516
+christmas                                            4.220516
+romantic                                             4.220516
+coen bros                                            4.220516
+dumb but funny                                       4.220516
+ocean                                                4.220516
+melancholic                                          4.220516
+funny                                                3.566756
+teen movie                                           2.813677
+australian                                           2.813677
+caper                                                2.813677
+cheerleading                                         2.813677
+stoner movie                                         2.813677
+romantic comedy                                      2.813677
+stupid as hell                                       2.813677
+dumb                                                 2.813677
+sweet                                                2.813677
+amnesia                                              2.813677
+slow                                                 2.813677
+mental illness                                       2.813677
+goofy                                                2.813677
+football                                             2.813677
+philosophy                                           2.813677
+love                                                 2.813677
+mockumentary                                         2.813677
+weird                                                2.813677
+literature                                           2.813677
+computer animation                                   2.813677
+redemption                                           2.813677
+realistic                                            2.813677
+movie business                                       2.813677
+fun movie                                            2.813677
+scenic                                               2.813677
+nudity (full frontal - notable)                      2.813677
+witty                                                2.813677
+president                                            2.813677
+berlin                                               2.813677
+switching places                                     2.813677
+pretentious                                          2.813677
+memory loss                                          2.813677
+farce                                                2.813677
+narrated                                             2.813677
+oscar (best animated feature)                        2.813677
+very interesting                                     2.813677
+horror                                               2.813677
+oscar winner                                         2.813677
+school                                               2.813677
+tokyo                                                2.813677
+great                                                2.813677
+fairy tales                                          2.813677
+action                                               2.034194
+easily confused with other movie(s) (title)          1.406839
+coming of age                                        1.406839
+surrealism                                           1.406839
+musicians                                            1.406839
+period piece                                         1.406839
+alien invasion                                       1.406839
+working class                                        1.406839
+inspirational                                        1.406839
+unique                                               1.406839
+friendship                                           1.406839
+immigrants                                           1.406839
+san francisco                                        1.406839
+feel good movie                                      1.406839
+silly                                                1.406839
+italy                                                1.406839
+black and white                                      1.406839
+nerds                                                1.406839
+geek                                                 1.406839
+ireland                                              1.406839
+island                                               1.406839
+obsession                                            1.406839
+suburbia                                             1.406839
+nudity                                               1.406839
+prison                                               1.406839
+supernatural                                         1.406839
+cute!                                                1.406839
+mother-son relationship                              1.406839
+excellent                                            1.406839
+satirical                                            1.406839
+heartwarming                                         1.406839
+unlikely friendships                                 1.406839
+love story                                           1.406839
+bad                                                  1.406839
+humorous                                             1.406839
+teens                                                1.406839
+indians                                              1.406839
+great movie                                          1.406839
+sad                                                  1.406839
+1970s                                                1.406839
+shallow                                              1.406839
+sentimental                                          1.406839
+humor                                                1.406839
+pixar animation                                      1.406839
+disney animated feature                              1.406839
+dark comedy                                          1.406839
+competition                                          1.406839
+father daughter relationship                         1.406839
+based on book                                        1.406839
+based on a true story                                1.406839
+courtroom                                            1.406839
+adultery                                             1.406839
+wistful                                              1.406839
+love triangles                                       1.406839
+casino                                               1.406839
+weed                                                 1.406839
+mystery                                              1.406839
+cynical                                              1.406839
+compassionate                                        1.406839
+affectionate                                         1.406839
+musical                                              1.406839
+basketball                                           1.406839
+monster                                              1.406839
+off-beat comedy                                      1.406839
+deadpan                                              1.406839
+lyrical                                              1.406839
+indie                                                1.406839
+oscar (best writing - screenplay written direct...   1.406839
+oscar (best music - original score)                  1.406839
+irish                                                1.406839
+german                                               1.406839
+awful                                                1.406839
+pregnancy                                            1.406839
+capitalism                                           1.406839
+colourful                                            1.406839
+gambling                                             1.406839
+pointless                                            1.406839
+nudity (full frontal - brief)                        1.406839
+nudity (full frontal)                                1.406839
+fantasy                                              1.406839
+teenagers                                            1.406839
+erotic                                               1.406839
+boxing                                               1.406839
+life                                                 1.406839
+sophia coppola                                       1.406839
+watch the credits                                    1.406839
+passionate                                           1.406839
+books                                                1.406839
+feel-good                                            1.406839
+cgi                                                  1.406839
+canada                                               1.406839
+horrible                                             1.406839
+documentary                                          1.406839
+jane austen                                          1.406839
+strange                                              1.406839
+idiotic                                              1.406839
+no plot                                              1.406839
+animal movie                                         1.406839
+depressing                                           1.406839
+australia                                            1.406839
+fish                                                 1.406839
+women                                                1.406839
+lawyers                                              1.406839
+money                                                1.406839
+spielberg                                            1.406839
+kids                                                 1.406839
+special                                              1.406839
+workplace                                            1.406839
+mummy                                                1.406839
+suicide attempt                                      1.406839
+disappointing                                        1.406839
+cancer                                               1.406839
+view askew                                           1.406839
+quirky                                               0.991302
+not funny                                            0.974986
+zombies                                              0.714321
+sequel                                               0.563788
+based on a book                                      0.561171
+remake                                               0.375892
+comic book                                           0.287974
+chick flick                                          0.278755
+japan                                                0.263171
+surreal                                              0.236130
+very good                                            0.200255
+sci-fi                                               0.175428
+war                                                  0.175428
+boring                                               0.175428
+martial arts                                         0.150383
+dark                                                 0.137798
+video game adaptation                                0.131585
+true story                                           0.125038
+history                                              0.118959
+based on a tv show                                   0.110265
+directorial debut                                    0.099412
+drama                                                0.094667
+god                                                  0.093998
+murder                                               0.093778
+atmospheric                                          0.093778
+imdb top 250                                         0.091887
+police                                               0.087723
+drugs                                                0.075192
+nudity (topless - brief)                             0.075192
+interesting                                          0.075192
+violent                                              0.068899
+zombie                                               0.056399
+adventure                                            0.056399
+nudity (topless - notable)                           0.045038
+future                                               0.043862
+new york city                                        0.043862
+time travel                                          0.043862
+adapted from:game                                    0.043862
+motorcycle                                           0.043862
+bad acting                                           0.043862
+amazing cinematography                               0.043862
+new york                                             0.043862
+crime                                                0.041420
+twist ending                                         0.037599
+british                                              0.037532
+nudity (topless)                                     0.037171
+overrated                                            0.030611
+pg                                                   0.024856
+reality tv                                           0.024856
+nudity (rear)                                        0.024856
+classic                                              0.024856
+thought-provoking                                    0.024856
+gay                                                  0.023669
+espionage                                            0.018800
+literary adaptation                                  0.018800
+cool                                                 0.018800
+world war ii                                         0.018800
+james bond                                           0.018800
+notable nudity                                       0.018800
+thriller                                             0.018800
+star wars                                            0.018800
+plot holes                                           0.018800
+fun                                                  0.017751
+adapted from:book                                    0.002915
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py diff Comedy Action p2
+Generating P2 diff model
+                                                         diff
+tag                                                          
+pixar                                               52.061045
+romance                                             50.726146
+animation                                           22.693276
+high school                                         18.688580
+fairy tale                                          14.683884
+good romantic comedies                              13.348986
+soccer                                              13.348986
+teen                                                13.348986
+disney                                              12.014087
+funniest movies                                     12.014087
+family                                              10.679189
+pg-13                                               10.679189
+memory                                              10.679189
+black comedy                                         9.344290
+religion                                             9.344290
+funny as hell                                        9.344290
+spelling bee                                         8.009392
+bollywood                                            8.009392
+existentialism                                       8.009392
+wedding                                              8.009392
+sexuality                                            8.009392
+wine                                                 8.009392
+guilty pleasure                                      6.674493
+stupid                                               6.674493
+relationships                                        6.674493
+cute                                                 6.674493
+bdsm                                                 6.674493
+very funny                                           6.674493
+psychology                                           6.674493
+college                                              5.339594
+road trip                                            5.339594
+cartoon                                              5.339594
+dreamworks                                           5.339594
+bittersweet                                          5.339594
+sports                                               5.339594
+suprisingly clever                                   5.339594
+rock and roll                                        5.339594
+british comedy                                       5.339594
+jay and silent bob                                   5.339594
+las vegas                                            5.339594
+whimsical                                            5.339594
+touching                                             5.339594
+brilliant                                            5.339594
+india                                                5.339594
+adolescence                                          5.339594
+animated                                             5.339594
+talking animals                                      4.004696
+sex                                                  4.004696
+london                                               4.004696
+artistic                                             4.004696
+music                                                4.004696
+christmas                                            4.004696
+romantic                                             4.004696
+coen bros                                            4.004696
+dumb but funny                                       4.004696
+ocean                                                4.004696
+melancholic                                          4.004696
+teen movie                                           2.669797
+australian                                           2.669797
+caper                                                2.669797
+cheerleading                                         2.669797
+stoner movie                                         2.669797
+romantic comedy                                      2.669797
+stupid as hell                                       2.669797
+dumb                                                 2.669797
+sweet                                                2.669797
+amnesia                                              2.669797
+slow                                                 2.669797
+mental illness                                       2.669797
+goofy                                                2.669797
+football                                             2.669797
+philosophy                                           2.669797
+love                                                 2.669797
+mockumentary                                         2.669797
+weird                                                2.669797
+literature                                           2.669797
+computer animation                                   2.669797
+redemption                                           2.669797
+realistic                                            2.669797
+movie business                                       2.669797
+fun movie                                            2.669797
+scenic                                               2.669797
+nudity (full frontal - notable)                      2.669797
+witty                                                2.669797
+president                                            2.669797
+berlin                                               2.669797
+switching places                                     2.669797
+pretentious                                          2.669797
+memory loss                                          2.669797
+farce                                                2.669797
+narrated                                             2.669797
+oscar (best animated feature)                        2.669797
+very interesting                                     2.669797
+horror                                               2.669797
+oscar winner                                         2.669797
+school                                               2.669797
+tokyo                                                2.669797
+great                                                2.669797
+fairy tales                                          2.669797
+funny                                                2.375317
+action                                               1.674493
+easily confused with other movie(s) (title)          1.334899
+coming of age                                        1.334899
+surrealism                                           1.334899
+musicians                                            1.334899
+period piece                                         1.334899
+alien invasion                                       1.334899
+working class                                        1.334899
+inspirational                                        1.334899
+unique                                               1.334899
+friendship                                           1.334899
+immigrants                                           1.334899
+san francisco                                        1.334899
+feel good movie                                      1.334899
+silly                                                1.334899
+italy                                                1.334899
+black and white                                      1.334899
+nerds                                                1.334899
+geek                                                 1.334899
+ireland                                              1.334899
+island                                               1.334899
+obsession                                            1.334899
+suburbia                                             1.334899
+nudity                                               1.334899
+prison                                               1.334899
+supernatural                                         1.334899
+cute!                                                1.334899
+mother-son relationship                              1.334899
+excellent                                            1.334899
+satirical                                            1.334899
+heartwarming                                         1.334899
+unlikely friendships                                 1.334899
+love story                                           1.334899
+bad                                                  1.334899
+humorous                                             1.334899
+teens                                                1.334899
+indians                                              1.334899
+great movie                                          1.334899
+sad                                                  1.334899
+1970s                                                1.334899
+shallow                                              1.334899
+sentimental                                          1.334899
+humor                                                1.334899
+pixar animation                                      1.334899
+disney animated feature                              1.334899
+dark comedy                                          1.334899
+competition                                          1.334899
+father daughter relationship                         1.334899
+based on book                                        1.334899
+based on a true story                                1.334899
+courtroom                                            1.334899
+adultery                                             1.334899
+wistful                                              1.334899
+love triangles                                       1.334899
+casino                                               1.334899
+weed                                                 1.334899
+mystery                                              1.334899
+cynical                                              1.334899
+compassionate                                        1.334899
+affectionate                                         1.334899
+musical                                              1.334899
+monster                                              1.334899
+basketball                                           1.334899
+off-beat comedy                                      1.334899
+deadpan                                              1.334899
+lyrical                                              1.334899
+indie                                                1.334899
+oscar (best writing - screenplay written direct...   1.334899
+oscar (best music - original score)                  1.334899
+irish                                                1.334899
+german                                               1.334899
+awful                                                1.334899
+pregnancy                                            1.334899
+capitalism                                           1.334899
+colourful                                            1.334899
+gambling                                             1.334899
+pointless                                            1.334899
+nudity (full frontal - brief)                        1.334899
+nudity (full frontal)                                1.334899
+fantasy                                              1.334899
+teenagers                                            1.334899
+erotic                                               1.334899
+boxing                                               1.334899
+life                                                 1.334899
+sophia coppola                                       1.334899
+watch the credits                                    1.334899
+passionate                                           1.334899
+books                                                1.334899
+feel-good                                            1.334899
+cgi                                                  1.334899
+canada                                               1.334899
+horrible                                             1.334899
+documentary                                          1.334899
+jane austen                                          1.334899
+strange                                              1.334899
+idiotic                                              1.334899
+no plot                                              1.334899
+animal movie                                         1.334899
+depressing                                           1.334899
+australia                                            1.334899
+fish                                                 1.334899
+women                                                1.334899
+lawyers                                              1.334899
+money                                                1.334899
+spielberg                                            1.334899
+kids                                                 1.334899
+special                                              1.334899
+workplace                                            1.334899
+mummy                                                1.334899
+suicide attempt                                      1.334899
+disappointing                                        1.334899
+cancer                                               1.334899
+view askew                                           1.334899
+quirky                                               1.333662
+zombies                                              0.894485
+parody                                               0.565041
+sequel                                               0.481201
+overrated                                            0.474764
+chick flick                                          0.461881
+based on a tv show                                   0.456865
+lesbian                                              0.436065
+hilarious                                            0.327048
+girlie movie                                         0.299794
+not funny                                            0.271220
+based on a book                                      0.225332
+remake                                               0.220362
+comic book                                           0.202118
+murder                                               0.195226
+satire                                               0.191742
+war                                                  0.166137
+boring                                               0.166137
+japan                                                0.154278
+history                                              0.132763
+directorial debut                                    0.132228
+imdb top 250                                         0.129630
+nudity (topless)                                     0.119117
+sci-fi                                               0.116269
+nudity (topless - notable)                           0.115045
+pirates                                              0.110207
+very good                                            0.103704
+british                                              0.095871
+dark                                                 0.094156
+surreal                                              0.072380
+fun                                                  0.066119
+espionage                                            0.060773
+true story                                           0.059553
+police                                               0.058141
+reality tv                                           0.058141
+drama                                                0.058139
+heist                                                0.057142
+god                                                  0.055103
+violent                                              0.047078
+adapted from:book                                    0.045191
+atmospheric                                          0.044665
+crappy sequel                                        0.044083
+drugs                                                0.044079
+nudity (topless - brief)                             0.044079
+interesting                                          0.044079
+england                                              0.033062
+zombie                                               0.033062
+politics                                             0.033062
+swashbuckler                                         0.033062
+future                                               0.029070
+new york city                                        0.029070
+time travel                                          0.029070
+amazing cinematography                               0.029070
+new york                                             0.029070
+crime                                                0.025434
+twist ending                                         0.022041
+ensemble cast                                        0.022041
+great soundtrack                                     0.022041
+magic                                                0.022041
+cross dressing                                       0.022041
+predictable                                          0.022041
+comedy                                               0.017217
+queer                                                0.015238
+gay                                                  0.014534
+spoof                                                0.014534
+good                                                 0.014534
+literary adaptation                                  0.011021
+cool                                                 0.011021
+world war ii                                         0.011021
+james bond                                           0.011021
+notable nudity                                       0.011021
+star wars                                            0.011021
+pg                                                   0.007619
+nudity (rear)                                        0.007619
+classic                                              0.007619
+thought-provoking                                    0.007619
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py diff Comedy Action p2d p2a p2s p2
+Generating P2 diff model
+Can not compare, as one of the genres doesn't exist
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py diff Comedy Actiondas p2[1@a[1@s[1@d
+Generating P2 diff model
+Can not compare the given genres, as they have same movies
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py diff Comedyasd Actiondas p2[K1
+Generating P1 diff model
+Can not compare the given genres, as they have same movies
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py diff Comedyasd Actiondas p1[1P p1[1P p1[1P p1
+Generating P1 diff model
+Can not compare, as one of the genres doesn't exist
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py actor tf 334[K[K
+Tag vector not availble for actor 3
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py actor tf 3i 3d 3f 3
+Tag vector not availble for actor 3
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py user tf 2456[K[K[K
+Tag vector not availble for user 2
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py user tf 2i 2d 2f 2
+Tag vector not availble for user 2
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py genre tf Actionasdsd
+Tag vector not availble for genre Actionasdsd
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ python generate_model.py genre tf Actionasdsdi Actionasdsdd Actionasdsdf Actionasdsd
+Tag vector not availble for genre Actionasdsd
+(mwdb) Jayanths-MacBook-Pro:csvutilities mj$ exit
+exit
+
+Script done on Sun Sep 17 17:34:25 2017

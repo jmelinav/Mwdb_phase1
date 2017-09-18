@@ -1,0 +1,7 @@
+python generate_actor_model.py actor tf 334
+python generate_actor_model.py actor idf 334
+python generate_actor_model.py user tf 2456
+python generate_actor_model.py user idf 2456
+python generate_actor_model.py genre tf Action
+python generate_actor_model.py genre idf Action
+python generate_actor_model.py diff Comedy Action td-idf
